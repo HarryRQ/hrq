@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../styles/ExperienceItem.css";
 
 export default function ExperienceItem({

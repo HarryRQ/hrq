@@ -1,9 +1,5 @@
 import "../styles/Socials.css";
-import {
-  IconBrandLinkedin,
-  IconBrandGithub,
-  IconBrandInstagram,
-} from "@tabler/icons-react";
+import { IconBrandLinkedin, IconBrandInstagram } from "@tabler/icons-react";
 
 //? Left here for color reference (bright green)
 //? rgb(153, 244, 228)

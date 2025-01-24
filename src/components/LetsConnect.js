@@ -1,10 +1,6 @@
 import "../styles/LetsConnect.css";
 import { useInView } from "react-intersection-observer";
-import {
-  IconBrandLinkedin,
-  IconBrandGithub,
-  IconMail,
-} from "@tabler/icons-react";
+import { IconMail } from "@tabler/icons-react";
 
 export default function LetsConnect() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.25 });
