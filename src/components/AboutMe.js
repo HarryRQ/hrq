@@ -3,7 +3,6 @@ import linkedinpic from "./assets/me-linkedin.jpeg";
 
 import { useInView } from "react-intersection-observer";
 import TypewriterComponent from "typewriter-effect";
-import { type } from "@testing-library/user-event/dist/type";
 
 export default function AboutMe() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
