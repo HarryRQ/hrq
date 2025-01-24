@@ -9,7 +9,7 @@ export const EXPERIENCE = [
     ],
   },
   {
-    title: "Software Developer",
+    title: "Software Dev",
     company: "Climatology Office – UPRM",
     location: "Mayagüez, P.R.",
     duration: "Apr 2022 - Aug 2022",

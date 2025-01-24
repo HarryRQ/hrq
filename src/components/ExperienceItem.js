@@ -18,7 +18,7 @@ export default function ExperienceItem({
 
     "CS Intern": ["QGIS", "SQL", "Geo-referenced Databases"],
 
-    "Software Developer": ["React", "TypeScript", "HTML", "CSS"],
+    "Software Dev": ["React", "TypeScript", "HTML", "CSS"],
 
     "Undergraduate Researcher": [
       "Evolutionary Algorithms",
