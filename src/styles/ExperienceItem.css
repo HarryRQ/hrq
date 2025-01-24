@@ -1,0 +1,114 @@
+.card {
+  width: 75%; /* Adjust width to a percentage for responsiveness */
+  max-width: 600px; /* Ensure a max width for larger screens */
+  height: auto;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.506);
+  background-color: #1f1d6e;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.duration {
+  font-size: 13px;
+  color: rgb(45, 212, 190);
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgb(153, 244, 228);
+}
+
+.experience-info p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.skill-bubble {
+  background-color: rgba(45, 212, 191, 0.1);
+  color: rgb(94 234 212);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 2%;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.front {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Keyframe for the glowing effect animation */
+@keyframes glowing-border {
+  0% {
+    background-position: 200% 200%; /* Start with the gradient off-screen */
+  }
+  50% {
+    background-position: -200% -200%; /* Move the gradient to the opposite corner */
+  }
+  100% {
+    background-position: 200% 200%; /* Move it back to the starting position */
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 90%; /* Make cards take full width */
+    margin-bottom: 20px; /* Add spacing between cards */
+  }
+
+  .experience-info {
+    font-size: 12px; /* Smaller text for mobile */
+    margin-top: 0px;
+  }
+
+  .duration {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .skills {
+    gap: 5px; /* Reduce gap for skill bubbles on mobile */
+  }
+
+  .skill-bubble {
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
+    padding: 4px 2%; /* Ensure proper padding */
+  }
+}

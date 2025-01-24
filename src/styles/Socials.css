@@ -1,0 +1,80 @@
+.socials-container {
+  top: 50%;
+  position: fixed;
+  transform: translateY(-50%);
+  left: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+}
+
+.socials-container a {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.socials-container a:hover {
+  transform: translateY(-5px);
+}
+
+.socials-container::after {
+  background-color: white;
+  width: 1px;
+  position: absolute;
+  content: "";
+  bottom: -190px;
+  left: 50%;
+  height: 180%;
+}
+
+/* Email container (right side) */
+.email-container {
+  top: 50%;
+  position: fixed;
+  transform: translateY(-50%);
+  right: 0; /* Align to the right side */
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: auto;
+  height: auto;
+}
+
+.email-container a {
+  text-decoration: none;
+  margin-bottom: 20px;
+  writing-mode: vertical-rl; /* Rotate the email text vertically */
+  transition: transform 0.3s ease;
+}
+
+.email-container a:hover {
+  transform: translateY(-5px);
+}
+
+.email-container::after {
+  background-color: white;
+  width: 1px;
+  position: absolute;
+  content: "";
+  bottom: -210px;
+  right: 50%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .socials-container {
+    display: none;
+  }
+
+  .email-container {
+    display: none;
+  }
+}

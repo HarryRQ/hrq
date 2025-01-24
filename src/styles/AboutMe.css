@@ -1,0 +1,203 @@
+.about-me {
+  margin-top: 200px;
+  padding: 20px 50px;
+  position: relative;
+  text-align: center;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.typewriter-text {
+  font-size: 50px; /*Set the font size */
+  color: rgb(153, 244, 228); /* Set the text color */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
+.custom-cursor {
+  font-size: 60px;
+  color: rgb(153, 244, 228);
+  animation: blink 0.9s step-end infinite;
+}
+
+/* Blinking effect */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about-me-description {
+  flex: 1;
+  font-size: 1.1rem;
+  text-align: justify;
+  max-width: 600px;
+  padding-left: 240px;
+}
+
+.about-me-description a {
+  color: rgb(153, 244, 228);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about-me-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-right: 35px;
+}
+
+.about-me-image img {
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-me-image:hover {
+  transform: translateY(-4px);
+}
+
+.about-me.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+b {
+  color: rgb(153, 244, 228);
+}
+
+@media (max-width: 1369px) {
+  .typewriter-text {
+    font-size: 45px;
+  }
+
+  .custom-cursor {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1264px) {
+  .typewriter-text {
+    font-size: 43px;
+  }
+
+  .custom-cursor {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 1243px) {
+  .about-me-description {
+    padding-left: 125px;
+  }
+  .typewriter-text {
+    font-size: 45px; /*Set the font size */
+    /* padding-left: 25px; */
+  }
+}
+
+@media (max-width: 1099px) {
+  .typewriter-text {
+    font-size: 35px; /*Set the font size */
+    /* padding-left: 25px; */
+  }
+}
+
+@media (max-width: 990px) {
+  .typewriter-text {
+    font-size: 25px; /*Set the font size */
+  }
+
+  .custom-cursor {
+    font-size: 25px;
+    color: rgb(153, 244, 228);
+    animation: blink 0.9s step-end infinite;
+  }
+
+  .about-me-description {
+    font-size: 15px;
+  }
+
+  .about-me-image img {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 969px) {
+  .typewriter-text {
+    font-size: 22px; /*Set the font size */
+  }
+
+  .custom-cursor {
+    font-size: 20px;
+    color: rgb(153, 244, 228);
+    animation: blink 0.9s step-end infinite;
+  }
+
+  .about-me-description {
+    font-size: 15px;
+  }
+
+  .about-me-image img {
+    max-width: 75%;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .typewriter-text {
+    font-size: 36px;
+    margin: 0 auto;
+  }
+
+  .custom-cursor {
+    font-size: 40px; /* Match size to text for visual consistency */
+  }
+
+  .about-me-description {
+    font-size: 18px;
+    padding: 0 25px;
+    max-width: 100%;
+  }
+
+  .about-me-image {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-me-image img {
+    max-width: 300px;
+    height: auto;
+    margin: 0;
+  }
+}
